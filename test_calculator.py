@@ -1,4 +1,5 @@
 import unittest
+import math
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
@@ -14,11 +15,14 @@ def test_subtract(self): # 3 assertions
     self.assertEqual(sub(0, 7), -7)
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self):
+        self.assertEqual(mul(3, 4), 12)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+    def test_divide(self):
+        self.assertAlmostEqual(div(8, 2), 4.0)
+        with self.assertRaises(ZeroDivisionError):
+            div(8, 0)
+
     # ##########################
 
     ######## Partner 2
@@ -39,21 +43,17 @@ def test_log_invalid_base(self):# 1 assertion
      ##########################
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self):
+        with self.assertRaises(ValueError):
+            log(-1, 10)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self):
+        self.assertAlmostEqual(hypotenuse(3, 4), 5.0)
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_sqrt(self):
+        self.assertAlmostEqual(square_root(16), 4.0)
+        with self.assertRaises(ValueError):
+            square_root(-9)
     ##########################
 
 # Do not touch this
