@@ -3,7 +3,8 @@
 # Partner 2: Andrea Hernandez Monserratte
 import unittest
 import math
-from calculator import *
+from calculator import add, subtract as sub, mul, div, logarithm as log, hypotenuse, square_root
+
 
 class TestCalculator(unittest.TestCase):
     # Partner 2
