@@ -1,4 +1,6 @@
 # https://github.com/andreahernandezm30/lab10-AHM-PP.git 
+# Partner 1: Prasheel Patel
+# Partner 2: Andrea Hernandez Monserratte
 """
 calculator.py
 - Defines functions used to create a simple calculator
