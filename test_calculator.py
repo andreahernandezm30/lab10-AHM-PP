@@ -1,3 +1,6 @@
+# https://github.com/andreahernandezm30/lab10-AHM-PP.git
+# Partner 1: Prascheel Patel
+# Partner 2: Andrea Hernandez Monserratte
 import unittest
 from calculator import *
 
