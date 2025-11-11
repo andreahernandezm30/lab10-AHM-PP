@@ -1,5 +1,4 @@
 import unittest
-import math
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
